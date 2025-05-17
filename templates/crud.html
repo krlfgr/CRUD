@@ -10,8 +10,8 @@
     <div class="contenedor">
         <h2 style="color: blanchedalmond;">usuario</h2>
         <form method="POST">
-            <input type="text" placeholder="ingrese su nombre" name="nombre">
-            <input type="email" placeholder="ingrese su correo" name="correo">
+            <input type="text" placeholder="ingrese su nombre" name="nombre" required>
+            <input type="email" placeholder="ingrese su correo" name="correo" required>
             <button>registrar</button>
         </form>
         <table>
@@ -21,7 +21,7 @@
                 <td>{{ persona.id }}</td>
                 <td>{{ persona.nombre }}</td>
                 <td>{{ persona.correo }}</td>
-                <td><a href="/?eliminar={{ persona.id }}">eliminar</a></td>
+                <td><a href="">editar</a>|<a href="/?eliminar={{ persona.id }}">eliminar</a></td>
             </tr>
 
             {% endfor %}
