@@ -21,7 +21,7 @@
                 <td>{{ persona.id }}</td>
                 <td>{{ persona.nombre }}</td>
                 <td>{{ persona.correo }}</td>
-                <td><a href="">editar</a>|<a href="/?eliminar={{ persona.id }}">eliminar</a></td>
+                <td><a href="/update/{{ persona.id }}">editar</a>|<a href="/?eliminar={{ persona.id }}">eliminar</a></td>
             </tr>
 
             {% endfor %}
